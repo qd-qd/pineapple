@@ -17,7 +17,7 @@ Once `pnpm` installed, run these command to install the dependencies and build t
 pnpm i && pnpm build -- --zip
 ```
 
-At the root of the repository, a new directory called `build` has been created. This directory should have a subdirectory either called `chrome-mv3-prod` or `firefox-mv2-prod` depending on the build command you executed.
+At the root of the repository, a new directory called `build` has been created. This directory should have a file called `chrome-mv3-prod.zip`. You will need it for the last step.
 
 </details>
 
