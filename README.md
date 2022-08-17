@@ -1,6 +1,8 @@
 # Pineapple 🍍
 
-This is just a pineapple.
+~~This is just a pineapple.~~
+
+The pineapple is a lie. Pineapple is a browser extension that intercepts and mocks requests made by the dApps to check if your address is blocked by a centralised entity or not. Did you suddenly lose access to the frontend of the famous DeFi dApps? Then this extension is for you. This extension is ready to use, no configuration is required. Installed it and enjoy freedom again.
 
 > For the moment, this extension only works on Chromium (Chrome/Microsoft Edge/Brave...). More compatibility would coming soon.
 
@@ -17,7 +19,7 @@ Once `pnpm` installed, run these command to install the dependencies and build t
 pnpm i && pnpm build -- --zip
 ```
 
-At the root of the repository, a new directory called `build` has been created. This directory should have a file called `chrome-mv3-prod.zip`. You will need it for the last step.
+At the root of the repository, a new directory called `build` has been created. This directory should have a file called `chrome-mv3-prod.zip`. You will need it for the last step.gi
 
 </details>
 
