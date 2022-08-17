@@ -24,6 +24,11 @@ const redirections = [
     mockedData: { isRisky: false },
     id: "oasis",
   },
+  {
+    regexFilter: "https://screening-worker.uniswap.workers.dev/",
+    mockedData: { block: false },
+    id: "uniswap",
+  },
 ].map((redirection) => ({
   ...redirection,
   regexSubstitution: `data:application/json,${encodeURIComponent(
