@@ -14,6 +14,11 @@ const redirections = [
     mockedData: { addressRiskIndicators: [] },
     id: "trmlabs:screening/addresses",
   },
+  {
+    regexFilter: "https://aave-api-v.*.aave.com/addresses/status.*",
+    mockedData: { addressAllowed: true },
+    id: "aave",
+  },
 ].map((redirection) => ({
   ...redirection,
   regexSubstitution: `data:application/json,${encodeURIComponent(
@@ -21,16 +26,17 @@ const redirections = [
   )}`,
 }));
 
-const rules = redirections.map(({ regexSubstitution, regexFilter }, index) => ({
-  id: index + 1,
-  priority: 1,
-  action: { type: "redirect", redirect: { regexSubstitution } },
-  condition: {
-    regexFilter,
-    requestMethods: ["post"],
-    resourceTypes: ["xmlhttprequest"],
-  },
-}));
+const rules = redirections.map(
+  ({ regexSubstitution, regexFilter, requestMethods }, index) => ({
+    id: index + 1,
+    priority: 1,
+    action: { type: "redirect", redirect: { regexSubstitution } },
+    condition: {
+      regexFilter,
+      resourceTypes: ["xmlhttprequest"],
+    },
+  })
+);
 
 (async function main() {
   try {
