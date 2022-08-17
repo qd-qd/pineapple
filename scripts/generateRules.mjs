@@ -29,6 +29,11 @@ const redirections = [
     mockedData: { block: false },
     id: "uniswap",
   },
+  {
+    regexFilter: "https://api.balancer.fi/sanctions-check",
+    mockedData: { isSanctioned: false },
+    id: "balancer",
+  },
 ].map((redirection) => ({
   ...redirection,
   regexSubstitution: `data:application/json,${encodeURIComponent(
