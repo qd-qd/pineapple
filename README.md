@@ -2,7 +2,7 @@
 
 ~~This is just a pineapple.~~
 
-The pineapple is a lie. Pineapple is a browser extension that intercepts and mocks requests made by the dApps to check if your address is blocked by a centralised entity or not. Did you suddenly lose access to the frontend of the famous DeFi dApps? Then this extension is for you. This extension is ready to use, no configuration is required. Installed it and enjoy freedom again.
+The pineapple is a lie. Pineapple is a browser extension that intercepts and mocks requests made by the dApps to check if your address is blocked by a centralised entity or not. Did you suddenly lose access to the frontend of the famous DeFi dApps? Then this extension is for you. This extension is ready to use, no configuration is required. Install it and enjoy freedom again.
 
 > For the moment, this extension only works on Chromium (Chrome/Microsoft Edge/Brave...). More compatibility would coming soon.
 
