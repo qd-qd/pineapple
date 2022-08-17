@@ -19,6 +19,11 @@ const redirections = [
     mockedData: { addressAllowed: true },
     id: "aave",
   },
+  {
+    regexFilter: "https://oasis.app/api/risk",
+    mockedData: { isRisky: false },
+    id: "oasis",
+  },
 ].map((redirection) => ({
   ...redirection,
   regexSubstitution: `data:application/json,${encodeURIComponent(
