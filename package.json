@@ -13,7 +13,7 @@
     "build:zip": "rm -f chrome-mv3-prod.zip && pnpm run rules:generate && plasmo build --target=chrome-mv3 --zip",
     "build:firefox": "pnpm build -- --target=firefox-mv2",
     "prettier": "prettier --check \"**/*.{ts,js,mjs}\"",
-    "prettier:fix": "pretptier --write \"**/*.{ts,js,mjs}\""
+    "prettier:fix": "prettier --write \"**/*.{ts,js,mjs}\""
   },
   "dependencies": {
     "plasmo": "0.51.1",
