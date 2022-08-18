@@ -6,12 +6,12 @@ import { writeFile } from "node:fs/promises";
 const redirections = [
   {
     regexFilter: "https://api.trmlabs.com/public/v.*/sanctions/screening",
-    mockedData: { isSanctioned: false },
+    mockedData: [{ isSanctioned: false }],
     id: "trmlabs:sanctions/screening",
   },
   {
     regexFilter: "https://api.trmlabs.com/public/v.*/screening/addresses",
-    mockedData: { addressRiskIndicators: [] },
+    mockedData: [{ addressRiskIndicators: [] }],
     id: "trmlabs:screening/addresses",
   },
   {
