@@ -34,6 +34,11 @@ const redirections = [
     mockedData: { isSanctioned: false },
     id: "balancer",
   },
+  {
+    regexFilter: "https://api.instadapp.io/defi/mainnet/sanctions-check",
+    mockedData: [{ isSanctioned: false }],
+    id: "instadapp",
+  },
 ].map((redirection) => ({
   ...redirection,
   regexSubstitution: `data:application/json,${encodeURIComponent(
