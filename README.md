@@ -1,5 +1,7 @@
 # Pineapple 🍍
 
+[![Twitter Follow](https://img.shields.io/twitter/follow/qdqd___?style=social)](https://twitter.com/qdqd___)
+
 ~~This is just a pineapple.~~
 
 The pineapple is a lie. Pineapple is a browser extension that intercepts and mocks requests made by dApps to check if your address is blocked by a centralised entity. Did you suddenly lose access to the frontend of famous DeFi dApps? Then this extension is for you. This extension is ready to use, no configuration is required. Install it and enjoy freedom again.
